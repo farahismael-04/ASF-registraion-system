@@ -1,0 +1,41 @@
+$kind: http-request
+url: http://localhost:8080/api/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"username\": \"farah_test\",\r
+
+    \  \"password\": \"StrongPassword123!\",\r
+
+    \  \"securityAnswers\": [\r
+
+    \    {\r
+
+    \      \"questionId\": 1,\r
+
+    \      \"answer\": \"Green\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"questionId\": 2,\r
+
+    \      \"answer\": \"Amman\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"questionId\": 3,\r
+
+    \      \"answer\": \"Football\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+order: 1000
